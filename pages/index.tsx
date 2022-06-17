@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
       <main className="w-full h-screen flex justify-center items-center bg-gradient-to-r from-primary-main-700 to-gradient-rhodolite-100">
         <h1 className="text-heading-04 md:text-heading-02 lg:text-heading-01 text-center font-extrabold text-primary-wb-white">
-          Coming soon!
+          Coming soon...
         </h1>
 
       </main>
