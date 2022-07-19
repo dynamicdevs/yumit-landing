@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./radio-button";
+@import "./radio-group";
+@import "./chip";
+@import "./menu";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  @apply text-primary-neutral-800
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.grid-container {
+  @apply
+  grid
+  grid-cols-4
+  gap-x-4
+  md:grid-cols-12
+  lg:gap-x-6
+  xl:gap-x-8
+}
+
+.container-wrapper {
+  @apply
+  mx-auto
+  w-[calc(100%-3rem)]
+  md:w-[calc(100%-5rem)]
+  lg:w-[calc(100%-120px)]
+  xl:w-[calc(100%-240px)]
+  max-w-[2560px]
+}
+
+.gradiant-section1 {
+  background: #461E52;
+}
+
+.bg-dark-88 {
+  background-color: rgba(6, 6, 30, 0.88);
+}
+
+.bg-dark-72 {
+  background-color: rgba(6, 6, 30, 0.72);
+}
+
+.border-t-item {
+  @apply relative before:w-[22px] before:h-[22px] before:rounded-full before:absolute before:left-1/2 before:-top-[11px] before:-translate-x-1/2 after:w-full after:h-[0.4px] after:absolute after:top-0 after:left-0;
+
+
+  &::before {
+    background: linear-gradient(180deg, rgba(224, 229, 250, 0.24) -24.81%, rgba(224, 229, 250, 0.0576) 100%);
+    border: 0.310965px solid rgba(235, 239, 255, 0.6);
+    backdrop-filter: blur(5.60458px);
+  }
+
+  &::after {
+    background-color: rgba(235, 239, 255, 0.6);
+  }
+}
+
+.content-radio {
+  @apply w-[200px] rounded-lg pb-[14px];
+  background: linear-gradient(180deg, rgba(224, 229, 250, 0.12) -24.94%, rgba(224, 229, 250, 0.0288) 100.55%);
+  border: 0.309249px solid rgba(235, 239, 255, 0.6);
+  backdrop-filter: blur(5.60458px);
+}
+
+.content-transform {
+  @apply rounded-lg mt-[6px] w-[188px] mx-auto;
+  background: linear-gradient(180deg, rgba(224, 229, 250, 0.2) -29.88%, rgba(224, 229, 250, 0.048) 103.73%);
+  border: 0.310965px solid rgba(235, 239, 255, 0.6);
+  backdrop-filter: blur(5.60458px);
+}
+
+@keyframes animatedImage {
+  0% { left: 0px;}
+ 100% { left: -100px;}
+}
+
+.infinity-tags {
+  @apply flex gap-2 relative mt-24;
+  animation: animatedImage 5s linear infinite;
+
+  .infinity-tags__item {
+    @apply h-12 rounded-[80px] text-primary-wb-white py-3 px-5 min-w-fit;
+    background: #141429;
+  }
+}
+

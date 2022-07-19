@@ -1,0 +1,22 @@
+.content-radio-button {
+  @apply h-[34px] px-[13.6px] py-[10.59px] flex items-center rounded-md;
+  background: linear-gradient(180deg, rgba(224, 229, 250, 0.2) -24.81%, rgba(224, 229, 250, 0.048) 100%);
+  border: 1px solid rgba(235, 239, 255, 0.6);
+  box-shadow: -1.86819px 1.86819px 6.53867px rgba(6, 6, 30, 0.6);
+  backdrop-filter: blur(2.80229px);
+}
+
+.rounded-check {
+  @apply w-[13.6px] h-[13.6px] rounded-full flex items-center justify-center relative mr-[4.53px];
+  border: 0.850019px solid #EBEFFF;
+}
+
+.rounded-check.selected {
+  @apply border-primary-wb-white before:absolute before:w-[6.8px] before:h-[6.8px] before:bg-primary-wb-white before:rounded-full;
+}
+
+.label-radio-button {
+  @apply flex items-center;
+  font-size: 9.79386px;
+  line-height: 12px;
+}
